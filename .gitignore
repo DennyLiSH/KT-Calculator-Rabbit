@@ -1,0 +1,125 @@
+# ============== 通用规则 ==============
+
+# --- IDE 和编辑器 ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# --- 操作系统 ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- 敏感信息 ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+credentials.*
+secrets.*
+
+# --- 日志和临时文件 ---
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+
+# --- 压缩包 ---
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ============== Android / Kotlin ==============
+
+# --- Gradle ---
+.gradle/
+**/build/
+!gradle-wrapper.jar
+gradle-app.setting
+.gradletasknamecache
+
+# --- Android 构建产物 ---
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# --- Android 特定 ---
+local.properties
+captures/
+.externalNativeBuild
+.cxx/
+.navigation/
+proguard/
+release/
+gen/
+bin/
+out/
+
+# --- IntelliJ / Android Studio ---
+*.iml
+*.iws
+*.ipr
+
+# --- Kotlin ---
+*.kotlin_module
+*.kt.swp
+*.kts.swp
+coroutine-debug.log
+
+# --- Keystore (取消注释以忽略) ---
+#*.jks
+#*.keystore
+
+# --- Google Services ---
+google-services.json
+
+# --- Lint ---
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+lint/reports/
+
+# --- Fastlane ---
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# --- Freeline ---
+freeline.py
+freeline/
+freeline_project_description.json
+
+# --- Data Binding / Kapt ---
+databinding/
+kapt/
+
+# --- Testing ---
+test-results/
+*.test
+
+# ============== 项目特定 ==============
+
+# Claude Code
+.claude/
+
+# 临时目录
+_*/
