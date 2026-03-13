@@ -2,6 +2,7 @@ package com.example.rabbitcalculator.calculator.data.repository
 
 import com.example.rabbitcalculator.calculator.data.local.HistoryDao
 import com.example.rabbitcalculator.calculator.data.local.HistoryEntity
+import com.example.rabbitcalculator.calculator.data.local.toDomain
 import com.example.rabbitcalculator.calculator.data.model.CalculationRecord
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
@@ -38,11 +39,3 @@ class HistoryRepositoryImpl(
         dao.deleteAll()
     }
 }
-
-// 扩展函数在 HistoryEntity.kt 中定义
-private fun HistoryEntity.toDomain(): CalculationRecord = CalculationRecord(
-    id = id,
-    expression = expression,
-    result = result,
-    timestamp = timestamp
-)

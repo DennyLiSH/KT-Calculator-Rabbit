@@ -279,12 +279,13 @@ private fun MainKeyboard(
             CalculatorButton("−", ButtonStyle.OPERATOR, { onAction(UserAction.Minus) }, Modifier.weight(1f).aspectRatio(1f))
         }
 
-        // C 0 . +
+        // C ⌫ 0 . +
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.spacedBy(4.dp)
         ) {
             CalculatorButton("C", ButtonStyle.CONTROL, { onAction(UserAction.Clear) }, Modifier.weight(1f).aspectRatio(1f))
+            CalculatorButton("⌫", ButtonStyle.CONTROL, { onAction(UserAction.Backspace) }, Modifier.weight(1f).aspectRatio(1f))
             CalculatorButton("0", ButtonStyle.NUMBER, { onAction(UserAction.Digit("0")) }, Modifier.weight(1f).aspectRatio(1f))
             CalculatorButton(".", ButtonStyle.NUMBER, { onAction(UserAction.Decimal) }, Modifier.weight(1f).aspectRatio(1f))
             CalculatorButton("+", ButtonStyle.OPERATOR, { onAction(UserAction.Plus) }, Modifier.weight(1f).aspectRatio(1f))

@@ -319,6 +319,8 @@ class CalculatorViewModel(
             }
             currentState.copy(angleUnit = newAngleUnit)
         }
+        // 同步更新 evaluator 的角度单位
+        evaluator.angleUnit = _state.value.angleUnit
         // 重新计算预览
         updateResultPreview()
     }

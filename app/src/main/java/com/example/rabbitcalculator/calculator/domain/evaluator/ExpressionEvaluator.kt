@@ -4,7 +4,7 @@ package com.example.rabbitcalculator.calculator.domain.evaluator
  * 表达式求值器（统一入口）
  * 整合 Lexer -> Parser -> Evaluator 流程
  */
-class ExpressionEvaluator(private val angleUnit: AngleUnit = AngleUnit.DEGREE) {
+class ExpressionEvaluator(var angleUnit: AngleUnit = AngleUnit.DEGREE) {
 
     /**
      * 对表达式字符串求值
